@@ -1,0 +1,218 @@
+
+@use 'mixin';
+
+
+.subHero {
+  height: 560px; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  display: flex;
+  align-items: center;
+
+  .title{
+    font-family: 'Rodeluxet';
+font-style: normal;
+font-weight: 400;
+font-size: 150px;
+line-height: 247px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: #FFFFFF;
+display: flex;
+justify-content: center;
+}
+}
+
+.con-direct{
+    height: 540px;
+}
+ .con-direct:nth-of-type(even) {
+  flex-direction: row-reverse !important;
+  display: flex;
+  }
+
+// .main-component img{
+//     width: 80%;
+// }
+
+.main-component .main-content h2{
+@include mixin.subhero-head;
+font-size: 45px !important;
+line-height: 45px !important;
+
+.main-row{
+    display: flex;
+    height: 750px;
+}
+
+}
+
+.main-component .main-row{
+    display: flex;
+    height: 750px;
+}
+.main-component .main-row .col-one{
+  width: 50%;
+}
+
+.main-component .main-row .col-two{
+    width: 50%;
+  }
+
+.main-component  .con-direct:nth-of-type(odd) img{
+    width: 80%;
+}
+
+
+
+.main-component  .con-direct:nth-of-type(even) img{
+    width: 80%;
+   
+}
+
+.main-component  .con-direct:nth-of-type(even) .col-one{
+    display: flex;
+    justify-content: end;
+}
+
+.main-component .main-content h1{
+  @include mixin.heroTwo;
+    font-weight: 400 !important;
+    font-size: 80px !important;
+    line-height: 86px !important;
+   
+  
+    margin-left: 110px !important;
+}
+
+.main-component .main-content .title{
+    font-family: 'Jost' sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 35px;
+color: #292929;
+padding-top: 30px;
+}
+
+.main-component .main-content .para{
+@include mixin.para2;
+line-height: 34px !important;
+padding-top: 10px !important;
+}
+
+
+@media (max-width:767px){
+    .con-direct {
+        height: 100%;
+        display: block !important;
+    }
+    .main-component .con-direct:nth-of-type(odd) img {
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+    .main-component .con-direct:nth-of-type(even) img {
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+}
+
+@media (max-width:899px){
+.con-direct {
+    height: 100%;
+    display: flex;
+}
+.main-component .main-row {
+    display: flex;
+    height: auto;
+}
+.main-component .main-row .col-one {
+    width: 100%;
+}
+.main-component .main-row .col-two {
+    width: 100%;
+}
+.main-component .con-direct:nth-of-type(odd) .main-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.main-component .con-direct:nth-of-type(odd) img {
+    width: 95%;
+  
+}
+.main-component .con-direct:nth-of-type(even) img {
+    width: 95%;
+    
+}
+.main-component .con-direct:nth-of-type(even) .main-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.main-component .main-content h1 {
+    font-size: 60px !important;
+    margin-left: 32px !important;
+    line-height: 65px !important;
+}
+.main-component .main-content h2 {
+    font-size: 40px;
+}
+}
+
+@media (max-width:800px) and (min-width: 768px) {
+    .con-direct {
+        height: 560px;
+    }
+    .subsectionone {
+        height: 350px !important;
+    }
+}
+
+
+@media (max-width:1024px) and (min-width: 900px) {
+    
+    .subHero .title {
+        font-size: 80px;
+    }
+    .main-component .main-content h1 {
+        font-size: 70px;
+    }
+    .main-component .main-content h2 {
+        font-size: 45px;
+    }
+    .main-component .main-content .title {
+        padding-top: 5px;
+    }
+    .main-component .main-content .para {
+        padding-top: 0px;
+    }
+    
+    .main-component .con-direct:nth-of-type(odd) .main-content {
+         padding-left: 20px; 
+    }
+    .main-component .con-direct:nth-of-type(even) .main-content {
+        padding-right: 20px;
+    }
+    .main-component .main-row {
+        display: flex;
+        height: 650px;
+    }
+}
+
+@media (max-width:1200px) and (min-width: 1025px) {
+    .subHero .title {
+        font-size: 125px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+.subHero {
+    height: 720px;
+}
+}

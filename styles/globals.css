@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+ /*font site - https://www.fontmirror.com/ */
+
+ @font-face {
+  font-family: "Rodeluxet";
+  src: url("../src/fonts/Rodeluxet.woff2") format("woff2");
+}
+
+h2{
+  font-family : "Rodeluxet"!important;
+}
+h1{
+  font-family: "Rodeluxet"!important;
+}
+
+@font-face {
+  font-family: "Prompt-Light";
+  src: url("../src/fonts/Prompt\ Light\ 300.woff") format("woff");
+  src: url("../src/fonts/Prompt\ Light\ 300.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Jost-SemiSolid";
+  src: url("../src/fonts/Jost-SemiBold-600.woff2") format("woff2");
+  src: url("../src/fonts/Jost-SemiBold-600.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Jost-Regular";
+  src: url("../src/fonts/Jost Regular 400.woff2") format("woff2");
+  src: url("../src/fonts/Jost Regular 400.woff") format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Jost-Medium";
+  src: url("../src/fonts/Jost Medium 500.woff2") format("woff2");
+  src: url("../src/fonts/Jost Medium 500.woff") format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Jost-Light";
+  src: url("../src/fonts/Jost\ Light\ 300.woff2") format("woff2");
+  src: url("../src/fonts/Jost\ Light\ 300.woff") format("woff");
+  font-weight: 300;
+}
+
+h5{
+  font-family: "Jost-Medium" !important;
+}
+h3{
+  font-family: "Jost-Medium" !important;
+}
+h4{
+  font-family: "Jost-Regular" !important;
+}
+
+.Jost-Medium{
+  font-family: "Jost-Medium" !important;
+} 
+
+.Jost-SemiSolid{
+  font-family: "Jost-SemiSolid" !important;
+} 
+
+ p{
+  font-family: "Jost-Regular" !important;
+}
+label{
+  font-family: "Jost-Medium" !important;
+}
+
+button{
+  font-family: "Jost-Regular" !important;
+}
+
+
+@media (min-width: 1440px){
+  .container {
+    max-width: 1200px !important;
+}
+}
+
+
+
+
+@media (min-width: 1200px) {
+.md\:grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+.grid {
+  display: grid;
+}
+
+}

@@ -1,0 +1,265 @@
+
+
+
+.webmenu {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+  
+}
+.webcolor {
+  background-color:rgba(1, 73, 81,)
+  !important;
+}
+.webwidth{
+  width:88%;
+  height: 100px;
+  display: flex;
+}
+
+.webmenu .active {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #FFF9EE;
+  background-color: none !important;
+}
+
+.webmenu p{
+    font-family: 'Jost' sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: #FFF9EE;
+margin-bottom: 0px !important;
+position: relative;
+}
+
+.webmenu p:after{
+  width: 0%;
+  content: ' ';
+  position: absolute;
+  background: white;
+  height: 2px;
+  bottom: -1px;
+}
+
+.webmenu p:hover::after{
+  width: 100%;
+  border-bottom: 2px solid white;
+    transition: 1s;
+}
+
+
+.webmenu .nav-left{
+    display: flex;
+    width: 45%;
+}
+
+.webmenu .nav-right{
+    display: flex;
+    width: 45%;
+}
+
+.webmenu .nav-logo{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.webmenu .nav-logo img{
+    width: 25%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.webmenu  .home{
+  width: 20px;
+  margin-left: auto;
+  position: absolute;
+  right: 5%;
+  top: 40%;
+}
+a {
+    text-decoration: none !important;
+}
+
+.mobileheader{
+  display: none;
+
+  .active{
+    color: #1A3B63 !important;
+    font-weight: 600 !important;
+  }
+}
+
+
+
+
+.mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+ 
+
+  .mobileheader .mobile-menu{
+    display: flex;
+  }
+  .mobileheader .mobile-img{
+    width: 50%;
+  }
+  .mobileheader .mobile-img img{
+    width: 50%;
+    padding: 10px;
+  }
+
+  .mobileheader .mobile-btn{
+    width: 50%;
+  }
+
+  .mobileheader .mobile-link p {
+    font-family: 'Jost' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: black;
+  }
+
+
+
+
+@media screen and (max-width: 768px) {
+    .webmenu{
+        display: none;
+    }
+    .mobileheader{
+      display: contents !important;
+    }
+    .mobileheader .mobile-img img {
+      width: 30%;
+      padding: 10px;
+      margin-left: 20px;
+  }
+  .section-two .content {
+    padding-left: 5%;
+    width: 100%;
+}
+.section-offer {
+  height: 1520px;
+}
+.section-offer .content-offer {
+  width:100%;
+}
+.section-offer .content-offer button {
+  margin-top: 10px;
+}
+.section-offer #Zoom-in .content-offer {
+  bottom: 2%;
+  transition: 1s;
+}
+.footer .social-icon {
+  gap: 13px;
+}
+}
+
+@media screen and (min-width: 900px) and (max-width:1024px) {
+  .webmenu {
+  display: none;
+}
+
+.mobileheader{
+  display: contents !important;
+}
+.mobileheader .mobile-img img {
+  width: 20%;
+  padding: 10px;
+  margin-left: 20px;
+}
+}
+
+@media screen and (min-width: 1200px) and (max-width:1367px) {
+  .webmenu {
+   width: 100%
+}
+.webmenu .home {
+  right: 2% !important;
+}
+
+}
+@media screen and (min-width: 1600px) {
+    .mobileheader{
+      display: none;
+    }
+ 
+
+}
+
+@media (max-width: 1200px) and (min-width: 1025px) {
+  .webmenu {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+  
+}
+.webmenu .home {
+  right: 2% !important;
+}
+  
+
+.webmenu .nav-logo img {
+  width: 25%;
+  margin-left: auto;
+  margin-right: 74px;
+}
+
+}
+
+@media (max-width: 1440px) and (min-width: 1201px){
+
+
+
+}
+

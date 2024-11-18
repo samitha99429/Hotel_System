@@ -1,0 +1,138 @@
+
+@mixin heroOne($based-color: rgba(1, 73, 81, 0.9)) {
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:$based-color;
+    opacity: 0.75;
+}
+
+@mixin heroTwo($based-color:rgba(1, 73, 81, 0.9)){
+
+
+font-style: normal;
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:$based-color;
+
+}  
+
+@mixin para1($color:#2e2e2e){
+font-family: "Jost" sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 31px;
+    text-transform: capitalize;
+    color:$color;
+
+}
+
+@mixin para2($color:#525252){
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color:$color;
+}
+
+@mixin subhero-head($base-color:rgba(1, 73, 81, 0.9)){
+font-family: "Rodeluxet";
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 97px;
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: $base-color;
+opacity: 0.75;
+}
+
+@mixin subhero-head2($base-color:rgba(1, 73, 81, 0.9)){
+
+    font-family: "Rodeluxet";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 90px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $base-color;
+}
+
+@mixin button($base-color:rgba(1, 73, 81, 0.9)){
+
+    font-family: "Jost" sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: $base-color;
+    border:2px solid $base-color;
+}
+
+@mixin buttontwo($base-color:rgba(1, 73, 81, 0.9)){
+    font-size: 18px;
+    background: $base-color;
+    text-transform: uppercase;
+    border: none;
+    color: #f5fffe;
+    font-family: "Jost" sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin buttonThree($color:#014951){
+    font-family: 'Jost' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color:$color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid $color;
+   
+}
+
+@mixin formSelect(){
+    font-family: "Jost" sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    color: #2e2e2e;
+    padding: 7px;
+    border: 1px solid gray;
+    outline: none;
+}

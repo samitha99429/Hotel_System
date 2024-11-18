@@ -1,0 +1,150 @@
+.conference {
+  height: 500px;
+  overflow: hidden;
+
+  .conference-img {
+    overflow: hidden;
+    height: 365px;
+  }
+
+  .conference-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 13px 17px;
+    gap: 10px;
+    position: absolute;
+    // width: 315px;
+    height: 112px;
+    // left: 55px;
+    // top: 372px;
+    background: #f5fffe;
+    margin-left: 55px;
+    margin-top: -55px;
+
+    h4 {
+      font-family: "Jost-Medium" !important;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 20px;
+      display: flex;
+      align-items: center;
+      text-transform: capitalize;
+      color: #231700;
+      padding-top: 9px;
+    }
+    p {
+      font-family: "Jost" sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 34px;
+      color: #525252;
+      padding-top: 2px;
+    }
+    .con-last {
+      display: flex;
+      gap: 58px;
+    }
+
+    button {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 23px 10px;
+      gap: 10px;
+      width: 140px;
+      height: 40px;
+      background: $base-color;
+      font-family: "Jost" sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 160%;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: #fffdf8;
+      outline: none;
+    }
+
+    button:hover {
+      background: hwb(186 0% 76% / 0.9);
+      transition: 1s;
+    }
+  }
+}
+
+
+.conference img {
+  width: 100%;
+}
+
+.conference:hover img {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.conference:hover .conference-content {
+  background: #e3f9f7;
+  transition: 1s;
+}
+
+@media (max-width: 767px) {
+  .conference .conference-content {
+    margin-left: 32px;
+  }
+  .conference {
+    height: auto;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 900px) {
+  .conference .conference-content .con-last {
+    gap: 27px;
+  }
+  .conference .conference-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 13px 10px;
+    gap: 10px;
+    position: absolute;
+    height: 112px;
+    background: #f0f6f9;
+    margin-left: 35px;
+    margin-top: -55px;
+    width: 27%;
+  }
+  .conference {
+    height: 440px;
+    overflow: hidden;
+  }
+  .conference .conference-img {
+    overflow: hidden;
+    height: 305px;
+  }
+}
+
+@media (max-width: 899px) and (min-width: 768px) {
+  .conference .conference-content {
+    margin-left: 27px;
+  }
+  .conference {
+    height: 450px;
+    overflow: hidden;
+  }
+  .conference .conference-img {
+    overflow: hidden;
+    height: 340px;
+  }
+}
+
+@media (max-width: 1440px) and (min-width: 1201px) {
+  .conference .conference-content {
+    margin-left: 54px;
+  }
+}

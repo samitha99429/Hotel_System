@@ -1,0 +1,51 @@
+pipeline {
+  agent {
+     node { 
+        label 'dev'
+        } 
+  }
+  stages {    
+    stage('Build') {
+      steps {
+        sh '''docker build --no-cache -f Dockerfile-dev -t serandib-bluewaters-dev-img:latest .'''
+      }
+    }
+    stage('Tests') {
+      steps {
+        echo 'no automated tests'
+      }
+    }
+    stage('Pre-Deployment') {
+      steps {
+        sh '''docker stop serandib-bluewaters-dev
+        docker rm serandib-bluewaters-dev
+        docker volume rm serandib-bluewaters-dev_data'''
+      }
+    }
+    stage('Deploy') {
+      steps {
+        sh '''docker-compose -f compose-dev.yml up -d --force-recreate
+        docker image prune --filter "dangling=true" --force
+        #docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
+        docker restart serandib-bluewaters-dev'''
+      }
+    }
+  } 
+  post {
+    always {
+      deleteDir()
+      dir("${env.WORKSPACE}@tmp") {
+        deleteDir()
+      }
+      dir("${env.WORKSPACE}@script") {
+        deleteDir()
+      }
+      dir("${env.WORKSPACE}@script@tmp") {
+        deleteDir()
+      }
+    }
+  }
+  options {
+    buildDiscarder(logRotator(numToKeepStr: '5'))
+  }
+}

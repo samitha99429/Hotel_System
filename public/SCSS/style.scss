@@ -1,0 +1,19 @@
+
+.bg-page{
+    background: #F5FFFE;
+}
+
+$base-color:  rgba(1, 73, 81, 0.9);;
+
+@import './home.scss';
+@import './experience.scss';
+@import './accomodation.scss';
+@import './aboutus.scss';
+@import './conference.scss';
+@import './gallery.scss';
+@import './contactus.scss';
+@import './header.scss';
+@import './menu.scss';
+@import './offer.scss';
+@import './conferencepopup.scss';
+@import './mixin.scss';

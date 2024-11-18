@@ -1,0 +1,209 @@
+
+
+.offer-bg{
+    background: #9D5318;
+}
+
+.Conference-details{
+    // background: rgb(18, 18, 18);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // opacity: 0.7;
+}
+.Conference-details .main-img{
+     width: 100%;
+     padding: 20px 30px 15px 30px;
+     
+}
+
+.Conference-details .close-section{
+   
+}
+
+
+
+.Conference-details .close{
+    width: 43px;
+}
+.Conference-details .detail-box{
+    width: 34%;
+    background: #F8FAFC;
+    position: absolute;
+    z-index: 999;
+    opacity: 1 !important;
+}
+
+.Conference-details .detail-box .main-topic{
+    font-family: 'Jost' sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+letter-spacing: 0.3px;
+line-height: 50px;
+text-align: center;
+text-transform: uppercase;
+color: #231700;
+}
+
+.Conference-details p span{
+    color: #525252;
+    font-weight: 700;
+}
+
+.Conference-details .detail-box p{
+    font-family: 'Jost' sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 35px;
+text-align: center;
+color: #525252;
+}
+
+.Conference-details .orange-text{
+    color: #3E767C !important;
+}
+
+.Conference-details .detail-box .desc{
+    width: 60%;
+    line-height: 25px !important;
+}
+
+.Conference-details .detail-box h3{
+    font-family: 'Jost' sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 27px;
+line-height: 80px;
+text-transform: capitalize;
+color:#014951;
+text-align: center;
+}
+
+.Conference-details .detail-box .book{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 22px 8px;
+gap: 10px;
+width: 150px;
+height: 38px;
+background: #014951;
+font-family: 'Jost' sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+display: flex;
+align-items: center;
+letter-spacing: 0.02em;
+color: #FFFDF8;
+margin-top: 10px;
+margin-bottom: 3px;
+}
+.Conference-details .detail-box .book:hover{
+    background: #00353b;
+}
+
+.Conference-details .apply{
+    color: #525252 !important;
+    font-size: 12px !important;
+    line-height: 30px !important;
+    margin-left: 60% !important;
+    margin-bottom: 20px !important;
+}
+
+ .gradient{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(to
+     bottom, black, black);
+    opacity: 0.7;
+    z-index: 997;
+  }
+
+  @media screen and (max-width: 767px) {
+    .Conference-details .detail-box {
+        width: 340px;
+    }
+    .Conference-details .main-img {
+        width: 100%;
+        padding: 15px 15px 15px 15px;
+    }
+    .Conference-details .close {
+        width: 35px;
+    }
+    .Conference-details .close-section {
+        margin-top: -63%;
+        margin-left: 82%;
+        position: absolute;
+    }
+    .Conference-details .detail-box .main-topic {
+        font-size: 18px;
+    }
+    .Conference-details .detail-box .desc {
+        width: 90%;
+        line-height: 28px !important;
+    }
+    .Conference-details .detail-box h3 {
+        font-size: 22px;
+        line-height: 50px;
+    }
+    .Conference-details .detail-box p {
+        font-size: 14px;
+    }
+    .Conference-details .apply {
+        padding-top: 5px !important;
+    }
+  }
+
+  @media  (min-width: 768px) and (max-width: 900px) {
+
+    .Conference-details .detail-box {
+        width: 70%;
+    }
+  }
+  @media  (min-width: 900px) and (max-width: 1400px) {
+  
+    .Conference-details .detail-box {
+        width: 52%;
+      }
+    }
+
+
+  /* CSS for disabling scrolling when popup is open */
+.no-scroll {
+    overflow: hidden;
+  }
+
+  .offer-bg-pop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    z-index: 999;
+  }
+  
+  /* CSS for the offer details popup */
+//   .Conference-details {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     padding: 20px;
+//     border-radius: 5px;
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//     z-index: 1000;
+//   }
+  
+  

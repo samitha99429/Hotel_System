@@ -1,0 +1,89 @@
+@use 'mixin';
+
+.aboutus img{
+ width: 500px;
+}
+
+.aboutus h2{
+  @include mixin.subhero-head;
+line-height: 70px !important;
+
+
+}
+
+.aboutus h1{
+   @include mixin.subhero-head2;
+   padding-left: 17%;
+}
+
+.aboutus .title{
+    font-family: 'Jost' sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 19px;
+line-height: 32px;
+text-transform: capitalize;
+color: #292929;
+padding-top: 50px;
+width: 80%;
+
+
+
+}
+
+.aboutus .para{
+    @include mixin.para2;
+line-height: 31px !important;
+width: 80%;
+padding-bottom: 40px;
+padding-top: 25px;
+}
+
+.aboutus button{
+   @include mixin.button($base-color: #01776F);
+    padding: 7px 20px;
+}
+
+.aboutus button:hover{
+    background: #01776F;
+    color: white;
+}
+
+@media (max-width:899px){
+    .aboutus h1 {
+        font-size: 60px;
+        line-height: 43px;
+    }
+    .aboutus h2 {
+        font-size: 40px;
+        padding-top: 30px;
+    }
+    .aboutus .para {
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .aboutus .title {
+        width: 100%;
+        padding-top: 33px;
+    }
+    .aboutus img {
+        width:100%;
+    }
+}
+
+@media (max-width:1024px) and (min-width: 900px) {
+    .aboutus .title {
+        padding-top: 20px;
+        width: 100%;
+    }
+    .aboutus .para {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+    .aboutus h2 {
+        font-size: 50px;
+    }
+    .aboutus h1 {
+        font-size: 80px;
+    }
+}

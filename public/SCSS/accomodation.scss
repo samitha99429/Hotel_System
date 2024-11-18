@@ -1,0 +1,317 @@
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px !important;
+  }
+}
+
+.room:hover {
+  width: -webkit-fill-available;
+  background: rgba(21, 204, 225, 0.03);
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.room {
+  width: -webkit-fill-available;
+  background: rgba(1, 73, 81, 0.03);
+  overflow: hidden;
+  padding-bottom: 20px;
+
+  :hover .img-room {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+
+  .img-room {
+    width: -webkit-fill-available;
+  }
+
+  .room-box-img {
+    height: 350px;
+    overflow: hidden;
+  }
+
+  .title {
+    font-family: "Jost" sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    padding-top: 14px;
+    padding-left: 15px;
+  }
+
+  .para {
+    font-family: "Jost" sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    color: #525252;
+    padding-left: 15px;
+    width: 93%;
+  }
+
+  .bottom-section {
+    display: flex;
+    gap: 40px;
+    padding-left: 17px;
+    padding-top: 20px;
+
+    .features {
+      display: flex;
+      gap: 6px;
+    }
+
+    .features img {
+      width: 25px;
+      height: 25px;
+    }
+
+    .features p {
+      font-family: "Jost" sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      color: #014951;
+    }
+  }
+}
+
+.room-bottom {
+  margin-bottom: 70px;
+
+  .room-bottom-img {
+    height: 270px;
+    overflow: hidden;
+  }
+
+  .room-second {
+    background: rgba(1, 73, 81, 0.03);
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+  .room-second:hover {
+    background: rgba(2, 121, 134, 0.06);
+    padding-bottom: 20px;
+    overflow: hidden;
+    transition: 1s;
+
+    .img-room {
+      transform: scale(1.1);
+      transition: 1s;
+    }
+  }
+  .img-room {
+    width: -webkit-fill-available;
+  }
+
+  .title {
+    font-family: "Jost" sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    padding-top: 14px;
+    padding-left: 15px;
+  }
+
+  .para {
+    font-family: "Jost" sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 34px;
+    color: #525252;
+    padding-left: 15px;
+    width: 86%;
+  }
+
+  .bottom-section {
+    display: flex;
+    gap: 40px;
+    padding-left: 8px;
+    padding-top: 20px;
+
+    .features {
+      display: flex;
+      gap: 6px;
+    }
+
+    .features img {
+      width: 25px;
+      height: 25px;
+    }
+
+    .features p {
+      font-family: "Jost" sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 26px;
+      color: #014951;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .room .para {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 899px) {
+  .subHero {
+    height: 230px;
+  }
+  .subHero .title {
+    font-size: 36px;
+    line-height: 100px;
+  }
+  .subsectionone {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .room .para {
+    width: 100%;
+    padding-right: 15px;
+    height: 235px;
+  }
+  .room-bottom .para {
+    width: 100%;
+  }
+  .subsectionone p {
+    padding-top: 20px;
+  }
+  .subsectionone h1 {
+    font-size: 60px;
+    line-height: 40px;
+  }
+  .subsectionone h2 {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  .room .bottom-section .features p {
+    font-size: 12px;
+  }
+  .room .bottom-section {
+    gap: 5px;
+    padding-left: 5px;
+  }
+  .room-bottom .bottom-section {
+    gap: 25px;
+  }
+  .room-bottom .room-second {
+    margin-bottom: 40px;
+  }
+  .room .room-box-img {
+    height: 230px;
+    overflow: hidden;
+  }
+  .room-bottom .room-bottom-img {
+    height: 240px;
+    overflow: hidden;
+  }
+  .room-bottom .title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 768px) {
+  .subHero {
+    height: 401px;
+  }
+  .subHero .title {
+    font-size: 70px;
+    line-height: 100px;
+  }
+  .contactus .content {
+    gap: 20px !important;
+  }
+  .room .room-box-img {
+    height: 220px;
+    overflow: hidden;
+  }
+  .room-bottom .room-bottom-img {
+    height: 250px;
+    overflow: hidden;
+  }
+  .room-bottom .title {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 900px) {
+  .room .bottom-section {
+    gap: 15px;
+  }
+  .room .bottom-section .features img {
+    width: 22px;
+    height: 22px;
+  }
+  .room-bottom .bottom-section {
+    gap: 13px;
+  }
+  .room-bottom .bottom-section .features img {
+    width: 22px;
+    height: 22px;
+  }
+  .room .room-box-img {
+    height: 285px;
+    overflow: hidden;
+  }
+  .room-bottom .room-bottom-img {
+    height: 220px;
+    overflow: hidden;
+  }
+  .aboutus img {
+    width: 420px !important;
+  }
+  .room-bottom .title {
+    font-size: 19px;
+  }
+  .room-bottom .para {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .room .bottom-section {
+    display: flex;
+    gap: 17px;
+    padding-left: 17px;
+    padding-top: 20px;
+  }
+
+  .room .room-box-img {
+    height: 300px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1440px) {
+  .room .bottom-section {
+    display: flex;
+    gap: 40px;
+    padding-left: 17px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .room .bottom-section {
+    display: flex;
+    gap: 40px;
+    padding-left: 17px;
+    padding-top: 20px;
+  }
+}

@@ -1,0 +1,35 @@
+version: '3'
+services:
+  serandib-bluewaters:
+    image: serandib-bluewaters-dev-img
+    container_name: serandib-bluewaters-dev
+  # front-end:
+  #   container_name: serandib-bluwaters
+  #build:
+  #context: ./
+  #dockerfile: Dockerfile
+    #env_file : ./.env
+    volumes: 
+      - data:/app
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 512M
+            #reservations:
+            #cpus: '0.25'
+            #memory: 256M
+    restart: unless-stopped
+    ports:
+      - 3682:3000
+    # extra_hosts:
+    #   - host.docker.internal:host-gateway
+    # environment:
+    #   - API_BASE_URL=host.docker.internal:1337
+volumes:
+  data:
+
+networks:
+  default:
+    external:
+      name: dev

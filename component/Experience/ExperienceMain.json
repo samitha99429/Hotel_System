@@ -1,0 +1,55 @@
+
+
+{
+    "Content" : [
+
+        {
+            "id" : "1",
+            "img" : "/Images/Experience/exp1.webp",
+            "titleone" : "Thrilling",
+            "titletwo" : "Activities",
+            "paraone" : "Dive into the Thrills of the Deep Blue! Get Your Adrenaline Pumping with Our Exciting Watersports Experience.",
+            "paratwo" : "From Speedboat Rides to Kayaking, Our Range of Adventure-Packed Activities Will Take You on a Journey of Fun and Thrills. With Expert Guides and Top-of-the-Line Equipment, You'll be Safe and Secure as You Explore the Waters. So Whether You're a Brave Soul Seeking an Adventure or Just Looking for a Way to Make a Splash, Our Hotel's Watersports Offer Something for Everyone"
+        },
+        {
+            "id" : "2",
+            "img" : "/Images/Experience/exp2.webp",
+            "titleone" : "Beachfront",
+            "titletwo" : "Dining",
+            "paraone" : "Tantalize Your Taste Buds: The Pier Restaurant Beckons Food Connoisseurs with a Feast of Flavor. ",
+            "paratwo" : "Indulge in a Symphony of Culinary Delights, Ranging from Traditional Treasures to Gourmet Global Cuisines, Artfully Prepared by Master Chefs with a Passion for Perfection. From Hearty Homestyle Meals to Exotic Ethnic Cuisines, The Pier Restaurant Offers a Dining Experience Like No Other. Experience the Magic of the Kitchen, Where Fresh Ingredients Meet Masterful Preparation."
+        },
+        {
+            "id" : "3",
+            "img" : "/Images/Experience/exp3.webp",
+            "titleone" : "Crocodile",
+            "titletwo" : "Farm",
+            "paraone" : "Test your limits! Get up close with one of africa’s most aggressive reptiles in the crocodile farm!",
+            "paratwo" : "This popular attraction offers guests a unique and up-close experience with these magnificent creatures. You can observe various species of crocodiles, from hatchlings to full-grown adults, in their natural habitats. Educational tours are available to learn about the biology and behavior of these fascinating animals."
+        },
+        {
+            "id" : "4",
+            "img" : "/Images/Experience/exp4.webp",
+            "titleone" : "Kuti Game",
+            "titletwo" : "Reserve",
+            "paraone" : "One of the few places in Malawi to see Africa’s most majestic creatures in their natural habitats!",
+            "paratwo" : "We offer guests the chance to explore the natural beauty of the region and observe a variety of wildlife, including native species like elephants, lions, and antelopes. Guided game drives, walking tours, and bird-watching expeditions are available to help guests fully immerse themselves in the rich and diverse landscape of the ranch."
+        },
+        {
+            "id" : "5",
+            "img" : "/Images/Experience/exp5.webp",
+            "titleone" : "Boat Adventure",
+            "titletwo" : "Outings",
+            "paraone" : "A boat ride to Lake Malawi National Park and a dip in one of the first freshwater lakes in Malawi, not tempting enough yet? ",
+            "paratwo" : "Known for its beautiful water and a diverse range of tropical fish, accompanied by one of our tour guides we offer you the chance to travel to Malawi National Park by boat and explore its waste surrounding forest area, or perhaps even a swim in the lake!"
+        },
+        {
+            "id" : "6",
+            "img" : "/Images/Experience/exp6.webp",
+            "titleone" : "Mua Mission",
+            "titletwo" : "Tour",
+            "paraone" : "Being Malawi’s top cultural Museum, it's no surprise that Chamare museum is the true epitome for exploring the history and culture here in malawi. ",
+            "paratwo" : "Traverse through this mystic city with one of our guides exhibiting the finest traditional arts and crafts of malawi at every glance. Experience Culture Tourism at its finest with detailed explanations and historic sights everywhere around you! Not to mention the delicious picnic included in the tour made my bluewaters!"
+        }
+    ]
+}
